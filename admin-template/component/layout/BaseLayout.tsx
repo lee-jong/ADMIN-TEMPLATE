@@ -1,5 +1,11 @@
+import React, { ReactNode } from "react";
 import Meta from "component/shared/Meta";
-const BaseLayout = ({ children }: any) => {
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const BaseLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Meta />
